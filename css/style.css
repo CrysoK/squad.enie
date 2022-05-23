@@ -227,27 +227,27 @@ iframe {
 /* Imágenes */
 
 #img1 {
-  background-image: var(--overlay), url("img/ss/1.jpg");
+  background-image: var(--overlay), url("../img/ss/1.jpg");
 }
 
 #img2 {
-  background-image: var(--overlay), url("img/ss/2.jpg");
+  background-image: var(--overlay), url("../img/ss/2.jpg");
 }
 
 #img3 {
-  background-image: var(--overlay), url("img/ss/3.jpg");
+  background-image: var(--overlay), url("../img/ss/3.jpg");
 }
 
 #img4 {
-  background-image: var(--overlay), url("img/ss/4.jpg");
+  background-image: var(--overlay), url("../img/ss/4.jpg");
 }
 
 #img5 {
-  background-image: var(--overlay), url("img/ss/5.jpg");
+  background-image: var(--overlay), url("../img/ss/5.jpg");
 }
 
 #img6 {
-  background-image: var(--overlay), url("img/ss/6.jpg");
+  background-image: var(--overlay), url("../img/ss/6.jpg");
 }
 
 /* Pantallas medias */
