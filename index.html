@@ -5,14 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/icon.png">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet">
-      
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="css/style.css">
-    <title>SQUAD[Ñ]</title>
+    <title>Inicio - SQUAD[Ñ]</title>
+
+    <!-- Esto evita que las imágenes de fondo de otras páginas se carguen
+    innecesariamente -->
+    <style>
+      .img {
+        background-image: var(--overlay), url("../img/ss/1.jpg");
+      }
+
+    </style>
   </head>
 
   <body>
@@ -20,8 +34,10 @@
     <header class="max-w">
     </header>
 
+    <button id="irArriba" class="boton"><i class="fa-solid fa-arrow-up"></i></button>
+
     <main class="max-w">
-      <section class="head img1">
+      <section class="head img">
         <h1>Inicio</h1>
         <p>
           <strong>SQUAD<span>[Ñ]</span></strong> es un espacio para los
@@ -30,7 +46,7 @@
       </section>
       <div class="grid">
         <section>
-          <h2 class="img1">¿Qué es Squad?</h2>
+          <h2 class="img">¿Qué es Squad?</h2>
           <p><strong>Squad es un juego de disparos en primera persona multijugador
               en línea que apunta a capturar el realismo del combate a través de la
               comunicación y el trabajo en equipo.</strong></p>
@@ -40,11 +56,9 @@
             emergente que reina de forma suprema.</p>
         </section>
         <section>
-          <h2 class="img1">Trailer</h2>
-          <iframe src="https://www.youtube.com/embed/UDnUD73gRXk?autoplay=1&mute=1&loop=1"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+          <h2 class="img">Trailer</h2>
+          <iframe src="https://www.youtube.com/embed/UDnUD73gRXk?autoplay=1&mute=1&loop=1" title="YouTube video player"
+            frameborder="0" allowfullscreen></iframe>
         </section>
       </div>
 

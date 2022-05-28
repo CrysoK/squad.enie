@@ -5,14 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/icon.png">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet">
-      
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="css/style.css">
-    <title>Squad[Ñ]</title>
+    <title>Jugar - SQUAD[Ñ]</title>
+
+    <style>
+      .img {
+        background-image: var(--overlay), url("../img/ss/3.jpg");
+      }
+
+    </style>
   </head>
 
   <body>
@@ -20,61 +32,67 @@
     <header class="max-w">
     </header>
 
+    <button id="irArriba" class="boton"><i class="fa-solid fa-arrow-up"></i></button>
+
     <main class="max-w">
 
-      <section class="head img3">
+      <section class="head img">
         <h1>Jugar</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, suscipit blanditiis repellendus culpa
-          cupiditate placeat mollitia qui ipsam voluptatum aliquid, sapiente adipisci! Molestiae obcaecati similique
-          vitae corporis! Deserunt, labore provident.
+          Espacios donde podrás disfrutar de la experiencia con jugadores
+          hispanohablantes.
         </p>
       </section>
-
       <section>
-        <h2 class="img3">Servidores</h2>
+        <h2 class="img">Servidores</h2>
         <!-- cards -->
         <div class="cards">
           <div class="card">
-            <img src="img/logos/cas.png" alt="">
+            <img src="img/sv/cas.png" alt="">
             <div class="card-content">
               <h3>CAS</h3>
-              <p>El servidor principal está en Estados Unidos por lo que se
+              <p>
+                El servidor principal está en Estados Unidos por lo que se
                 mezclan el español y el inglés, pero sin llegar a perjudicar la
                 experiencia. Cuenta con miembros "oficiales" y diversos grupos
-                internos. Realizan eventos frecuentemente.</p>
+                internos. Realizan eventos frecuentemente.
+              </p>
               <div class="card-buttons">
-                <a class="button" href="steam://connect/199.127.60.226:27165">Conectar</a>
-                <a class="button" href="https://discord.gg/bfDv2Ze">Discord</a>
+                <a class="boton" href="steam://connect/199.127.60.226:27165">Conectar</a>
+                <a class="boton" href="https://discord.gg/bfDv2Ze">Discord</a>
               </div>
 
             </div>
           </div>
           <div class="card">
-            <img src="img/logos/sph.png" alt="">
+            <img src="img/sv/sph.png" alt="">
             <div class="card-content">
               <h3>SPH</h3>
-              <p>Ubicado en Europa, predominan jugadores de España. También
+              <p>
+                Ubicado en Europa, predominan jugadores de España. También
                 cuenta con miembros a modo de clan. Organizan eventos con
-                frecuencia.</p>
+                frecuencia.
+              </p>
               <div class="card-buttons">
-                <a class="button" href="steam://connect/194.26.183.92:27167">Conectar</a>
-                <a class="button" href="https://discord.com/invite/rMjz4SE">Discord</a>
+                <a class="boton" href="steam://connect/194.26.183.92:27167">Conectar</a>
+                <a class="boton" href="https://discord.com/invite/rMjz4SE">Discord</a>
               </div>
             </div>
 
           </div>
           <div class="card">
-            <img src="img/logos/ls.png" alt="">
+            <img src="img/sv/ls.png" alt="">
             <div class="card-content">
               <h3>LATAMSQUAD</h3>
-              <p>Localizado en América del Sur, reúne a jugadores de habla
+              <p>
+                Localizado en América del Sur, reúne a jugadores de habla
                 hispana de la región. La administración es estricta por lo que
                 asegúrate de leer detenidamente las reglas. Realizan eventos de
-                vez en cuando.</p>
+                vez en cuando.
+              </p>
               <div class="card-buttons">
-                <a class="button" href="steam://connect/177.54.147.174:57169">Conectar</a>
-                <a class="button" href="https://discord.gg/CyJmm4cXVh">Discord</a>
+                <a class="boton" href="steam://connect/177.54.147.174:57169">Conectar</a>
+                <a class="boton" href="https://discord.gg/CyJmm4cXVh">Discord</a>
               </div>
 
             </div>
@@ -83,17 +101,19 @@
       </section>
 
       <section>
-        <h2 class="img3">Contacto</h2>
+        <h2 class="img">Contacto</h2>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, odio necessitatibus perferendis id quo beatae
-          pariatur corporis earum saepe sapiente ea eum dolore quos. Nesciunt corporis id corrupti asperiores
-          distinctio.
+          Si crees que falta algún servidor, no dudes en comentarlo a través del
+          siguiente formulario. Este sitio está hecho por y para la comunidad
+          hispanohablante de Squad y cualquier aporte para mejorar será
+          bienvenido.
         </p>
-        <form action="">
-          <input type="text" placeholder="Nombre">
-          <input type="email" placeholder="Correo" required>
-          <textarea placeholder="Mensaje" required></textarea>
-          <input class="button" type="submit" value="Enviar">
+        <form action="mailto:contacto@squadñ.tk" method="get" enctype="text/plain" novalidate>
+          <input type="text" name="nombre" placeholder="Nombre (opcional)">
+          <input type="email" name="correo" placeholder="Correo" required>
+          <input type="text" name="subject" placeholder="Asunto">
+          <textarea name="body" placeholder="Mensaje" required></textarea>
+          <button class="boton" type="submit" disabled>Enviar</button>
         </form>
       </section>
 
