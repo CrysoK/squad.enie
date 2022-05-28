@@ -260,10 +260,10 @@ a {
   align-content: flex-start;
   height: 100%;
 }
-.card:hover {
-  /* transform: scale(1.025, 1.025);
-  transition: transform 0.1s; */
-}
+/* .card:hover {
+  transform: scale(1.025, 1.025);
+  transition: transform 0.1s;
+} */
 .card img {
   aspect-ratio: 1;
   width: 100%;
