@@ -415,7 +415,7 @@ footer div {
 *                            PANTALLAS MUY PEQUEÑAS                            *
 *******************************************************************************/
 
-@media (max-width: 480px) {
+@media (max-width: 447px) {
   .card {
     flex-direction: column;
   }
