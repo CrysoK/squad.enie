@@ -197,10 +197,15 @@ h1 {
 
 /* CONTENIDO ******************************************************************/
 
-.grid {
+.columnas {
   display: grid;
+  grid-template-columns: 1fr;
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  gap: 1.5rem;
 }
-
+.columnas p {
+  padding: 0;
+}
 h2 {
   font-size: 1.75rem;
   color: var(--c-squad);
@@ -233,10 +238,23 @@ p {
 ul {
   padding: 0 1.5rem 1.5rem 1.5rem;
   margin-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 a {
   color: var(--c-squad);
+}
+
+/* IFRAME *********************************************************************/
+
+iframe {
+  /* padding: 0 1.5rem 1.5rem 1.5rem; */
+  width: 100%;
+  aspect-ratio: 16/9;
+  align-self: center;
+  border: 1px solid var(--c-squad);
 }
 
 /* CARDS **********************************************************************/
@@ -315,7 +333,7 @@ form {
   border: var(--c-squad) solid 1px;
   border-radius: 5px;
   padding: 1rem;
-  margin: 1rem;
+  margin: 0 1.5rem 1.5rem 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -347,23 +365,16 @@ textarea:focus {
   outline: var(--c-error1) solid 1px;
 }
 
-/* IFRAME *********************************************************************/
-
-iframe {
-  padding: 0 1.5rem 1.5rem 1.5rem;
-  width: 100%;
-  aspect-ratio: 16/9;
-}
-
 /* FOOTER *********************************************************************/
 
 footer {
   border-top: 1px solid var(--c-squad);
   padding: 1.5rem;
+  text-align: center;
 }
 
 footer div {
-  text-align: center;
+  /* text-align: center; */
   margin-top: 1.5rem;
 }
 
@@ -391,8 +402,12 @@ footer div {
 
   /* CONTENIDO ****************************************************************/
 
-  .grid {
+  .columnas {
     grid-template-columns: 1fr 1fr;
+  }
+
+  #indice {
+    order: 1;
   }
 
   /* CARDS ********************************************************************/
@@ -427,6 +442,10 @@ footer div {
     justify-content: flex-end;
   }
 }
+
+/*******************************************************************************
+*                            PANTALLAS MUY PEQUEÑAS                            *
+*******************************************************************************/
 
 @media (max-width: 410px) {
   .card {
