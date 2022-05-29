@@ -13,9 +13,9 @@ fetch("hf/footer.html")
 
 /* IR ARRIBA ******************************************************************/
 
-var boton = document.querySelector("#irArriba");
+var boton = document.querySelector("#ir-arriba");
 
-// Si la página tiene #irArriba
+// Si la página tiene #ir-arriba
 if (boton) {
   window.onscroll = () => {
     if (document.documentElement.scrollTop > 200) {
