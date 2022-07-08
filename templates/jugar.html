@@ -1,42 +1,18 @@
-<!DOCTYPE html>
-<html lang="es">
+{% extends 'base.html' %}
 
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="img/icon.png">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="css/style.css">
-    <title>Jugar - SQUAD[Ñ]</title>
+{% block head %}
+<title>Jugar - SQUAD[Ñ]</title>
 
     <style>
       .img {
-        background-image: var(--capa-sobre-fondo), url("img/ss/11.jpg");
+        background-image: var(--capa-sobre-fondo), url("{{ url_for('static', filename='img/ss/11.jpg') }}");
       }
 
     </style>
-  </head>
+{% endblock %}
 
-  <body>
-
-    <header class="ancho-maximo">
-    </header>
-
-    <button id="ir-arriba" class="boton"><i class="fa-solid fa-arrow-up"></i></button>
-
-    <main class="ancho-maximo">
-
-      <section class="principal img">
+{% block main %}
+     <section class="principal img">
         <h1>Jugar</h1>
         <p>
           Espacios donde podrás disfrutar de la experiencia con jugadores
@@ -46,11 +22,11 @@
       <section>
         <h2 class="img">Servidores</h2>
         <p>Si crees que falta algo, no dudes en comentarlo a través
-          del <a href="index.html#contacto">formulario de contacto</a>.</p>
+          del <a href="{{ url_for('index') }}#contacto">formulario de contacto</a>.</p>
         <!-- cards -->
         <div class="cards">
           <div class="card">
-            <img src="img/sv/cas.png">
+            <img src="{{ url_for('static', filename='img/sv/cas.png') }}">
             <div class="card-texto">
               <h3>CAS</h3>
               <p>
@@ -67,7 +43,7 @@
             </div>
           </div>
           <div class="card">
-            <img src="img/sv/sph.png">
+            <img src="{{ url_for('static', filename='img/sv/sph.png') }}">
             <div class="card-texto">
               <h3>SPH</h3>
               <p>
@@ -83,7 +59,7 @@
 
           </div>
           <div class="card">
-            <img src="img/sv/ls.png">
+            <img src="{{ url_for('static', filename='img/sv/ls.png') }}">
             <div class="card-texto">
               <h3>LATAMSQUAD</h3>
               <p>
@@ -101,14 +77,4 @@
           </div>
         </div>
       </section>
-
-    </main>
-
-    <footer class="ancho-maximo">
-
-    </footer>
-
-    <script src="js/script.js"></script>
-  </body>
-
-</html>
+{% endblock %}

@@ -1,16 +1,3 @@
-/* HEADER Y FOOTER ************************************************************/
-
-fetch("hf/header.html")
-  .then((r) => r.text())
-  .then((h) => {
-    document.querySelector("header").innerHTML = h;
-  });
-fetch("hf/footer.html")
-  .then((r) => r.text())
-  .then((f) => {
-    document.querySelector("footer").innerHTML = f;
-  });
-
 /* IR ARRIBA ******************************************************************/
 
 var boton = document.querySelector("#ir-arriba");
