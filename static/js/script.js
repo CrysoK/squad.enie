@@ -36,11 +36,11 @@ if (form) {
       valido: false,
     },
     mensaje: {
-      e: form.elements.body,
+      e: form.elements.mensaje,
       valido: false,
     },
     asunto: {
-      e: form.elements.subject,
+      e: form.elements.asunto,
       valido: false,
     },
   };
