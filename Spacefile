@@ -10,8 +10,8 @@ micros:
     run: gunicorn app:app
     dev: flask run -p $PORT
 
-  - name: stats
-    src: ./stats
+  - name: api
+    src: ./api
     engine: python3.9
     run: uvicorn app:app
     dev: uvicorn app:app --reload
